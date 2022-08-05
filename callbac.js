@@ -1,14 +1,14 @@
-function myDisplayer(some) {
-    let a = some;
-  }
+// function myDisplayer(some) {
+//     let a = some;
+//   }
   
-  function myCalculator(num1, num2) {
-    let sum = num1 + num2;
-    myDisplayer(sum);
-    console.log(sum);
-  }
+//   function myCalculator(num1, num2) {
+//     let sum = num1 + num2;
+//     myDisplayer(sum);
+//     console.log(sum);
+//   }
   
-  myCalculator(5, 5);
+ //; myCalculator(5, 5);
   
 // //Array methodds
 // 1. Map
@@ -27,9 +27,9 @@ function myDisplayer(some) {
 
 
 // // 2. find 
-//  var array = [30,22,13,14];
-//  var b  =  array .find(element => element < 22);
-//  console.log("find :" ,b);
+ var array = [30,22,15,14];
+ var b  =  array .find(element => element < 22);
+ console.log("find :" ,b);
 
 //  // 3 .filter 
 //  var words = ["hi", "hello", "hey", "apple", "watermelon","lemon", "javascript"];
