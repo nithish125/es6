@@ -27,9 +27,9 @@
 
 
 // // 2. find 
- var array = [30,22,15,14];
- var b  =  array .find(element => element < 22);
- console.log("find :" ,b);
+//  var array = [30,22,15,14];
+//  var b  =  array .find(element => element < 22);
+//  console.log("find :" ,b);
 
 //  // 3 .filter 
 //  var words = ["hi", "hello", "hey", "apple", "watermelon","lemon", "javascript"];
@@ -184,4 +184,5 @@
 //   second();
 // };
 // third();
+var a=prompt("enter number")
 

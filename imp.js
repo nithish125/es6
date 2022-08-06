@@ -1,1 +1,4 @@
-import {products} from "./exp.js";
+import products from './exp';
+
+
+console.log(products);

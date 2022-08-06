@@ -31,3 +31,4 @@ export const products=[
         description:"made from Milk, Wheat and 27 vital nutrients, helps children become taller, stronger and sharper. Let them continue to amaze you with their growth "
     }
 ]
+console.log(products)
