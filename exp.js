@@ -1,34 +1,56 @@
-export const products=[
+// export 
+const products=[
     {
         id:1,
         name:"horlicks",
-        description:"made from Milk, Wheat and 27 vital nutrients, helps children become taller, stronger and sharper. Let them continue to amaze you with their growth "
+        qty:0
     },
     {
         id:2,
         name:"mango",
-        description:"made from Milk, Wheat and 27 vital nutrients, helps children become taller, stronger and sharper. Let them continue to amaze you with their growth "
+        qty:0
     },
     {
         id:3,
         name:"apple",
-        description:"made from Milk, Wheat and 27 vital nutrients, helps children become taller, stronger and sharper. Let them continue to amaze you with their growth "
+        qty:0
     },
     {
         id:4,
         name:"lab",
-        description:"made from Milk, Wheat and 27 vital nutrients, helps children become taller, stronger and sharper. Let them continue to amaze you with their growth "
+        qty:0
     },
     {
         id:5,
         name:"cookie",
-        description:"made from Milk, Wheat and 27 vital nutrients, helps children become taller, stronger and sharper. Let them continue to amaze you with their growth "
+        qty:0
     },
 
     {
         id:6,
         name:"mango",
-        description:"made from Milk, Wheat and 27 vital nutrients, helps children become taller, stronger and sharper. Let them continue to amaze you with their growth "
+        qty:0
     }
 ]
-console.log(products)
+//console.log(products);
+var add=document.querySelector("#add");
+var remove=document.querySelector("#remove");
+var cart=document.querySelector("#cart");
+add.addEventListener("click", ()=>{
+    var v = parseInt(prompt("Enter the id number"));
+   let c= products.find((p) => p.id == v)
+    c.qty++  
+})
+remove.addEventListener("click",()=>{
+    var v = parseInt(prompt("Enter the id number"));
+    products.find((p) => p.id == v).qty = 0;
+    //updateCart();
+})
+cart.addEventListener("click",()=>{
+    cart = [];
+    products.filter((p) => p.qty > 0).forEach((q) => cart.push(q));
+    console.log(cart)
+  })
+
+
+// export default products
